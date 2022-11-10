@@ -8,10 +8,10 @@ Also a Telegram Bot is needed, for that we use Telegram and by messaging [BotFat
 
 For our own Telegram user we need to grab our ID, and for that we message [UserInfoBot](https://telegram.me/userinfobot) with the `/start` command. Save the 9-Digit ID for later
 
-flowchart LR
-
+```mermaid
 A[Start] --> B(Connect To WiFi, configure and send startup alert)
 B --> C{Soil Hum Level}
 C -->|hum < 600| D[Too much water notification]
 C -->|600 < hum < 1000| E[Normal humidity level notification]
 C -->|hum > 1000| F[Dehidration notification]
+```
