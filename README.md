@@ -1,6 +1,7 @@
 # EKO-Telegram-Soil-Sensor
 This project uses an ESP8266 and an analog Capacitive Soil Sensor to alert a user of it's plant health
 
+![connection diagram for the ESP8266](/img/connections.png)
 # Requirements 
 This repo uses the [universal-telegram-bot-library](https://github.com/witnessmenow/Universal-Arduino-Telegram-Bot) as a basis for sending messages using a Telegram Bot, need to have that installed first.
 
