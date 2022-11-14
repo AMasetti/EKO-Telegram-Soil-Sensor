@@ -62,7 +62,7 @@ void loop() {
   Serial.println(humedad);
 
   // Regamos con mucha agua
-  if ( humedad < 700 &&  (!alerta_enviada || startup)) {
+  if ( humedad < 600 &&  (!alerta_enviada || startup)) {
     alerta_enviada = 1 ;
     startup = 0;
     bot.sendMessage(CHAT_ID, "Me regaste de más, me voy a morir 🥺", "");
@@ -77,7 +77,7 @@ void loop() {
   
 
   // Rango normal de humedad, solo alertamos si previamente no lo hicimos
-  if ( humedad > 700 && humedad < 1000 && (alerta_enviada || startup)) {
+  if ( humedad > 700 && humedad < 900 && (alerta_enviada || startup)) {
     alerta_enviada = 0 ;
     startup = 0;
     bot.sendMessage(CHAT_ID, "Todo piola, gracias por cuidarme 🙌", "");
